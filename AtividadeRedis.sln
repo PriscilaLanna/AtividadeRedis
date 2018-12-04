@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AtividadeRedis", "Atividade
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AtividadeRedis2", "AtividadeRedis2\AtividadeRedis2.csproj", "{468778F5-DD5E-4344-9A6F-F8BAF20F82E1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Queue", "Queue\Queue.csproj", "{70CA18FC-3DAE-4D0A-871C-A7FE77EC2DA2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{468778F5-DD5E-4344-9A6F-F8BAF20F82E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{468778F5-DD5E-4344-9A6F-F8BAF20F82E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{468778F5-DD5E-4344-9A6F-F8BAF20F82E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70CA18FC-3DAE-4D0A-871C-A7FE77EC2DA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70CA18FC-3DAE-4D0A-871C-A7FE77EC2DA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70CA18FC-3DAE-4D0A-871C-A7FE77EC2DA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70CA18FC-3DAE-4D0A-871C-A7FE77EC2DA2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
