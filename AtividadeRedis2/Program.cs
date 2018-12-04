@@ -1,7 +1,7 @@
 ﻿using System;
 using StackExchange.Redis;
 
-namespace AtividadeRedis
+namespace AtividadeRedis2
 {
     class Program
     {
@@ -10,16 +10,19 @@ namespace AtividadeRedis
             ConnectionMultiplexer redis = ConnectionMultiplexer.Connect("trezenetredis.redis.cache.windows.net:6380,password=ftXkXFGfHf9Pf4sIJ8LVIgSQTAmU7I38nnRf96qmipE=,ssl=True,abortConnect=False");
             var db = redis.GetDatabase();
 
-            Console.WriteLine("Digite seu rm");
-            var rm = Console.ReadLine();
-
-            Console.WriteLine("Digite seu nome");
+            Console.WriteLine("Digite o seu nome");
             var nome = Console.ReadLine();
 
-            db.StringSet(rm, nome);
+            var pubsub = redis.GetSubscriber();
+            pubsub.Subscribe("13net", (channel, message) => Console.WriteLine(message.ToString()));
 
-            Console.WriteLine($"chave:{rm}, valor:{db.StringGet(rm)}");
-            Console.Read();
+            db.Publish("13net",$"{nome} entrou na sala");
+
+            while(true)
+            {
+                var msg = Console.ReadLine();
+                db.Publish("13net",msg);
+            }
         }
     }
 }

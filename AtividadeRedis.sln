@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AtividadeRedis", "AtividadeRedis\AtividadeRedis.csproj", "{CEED9B50-8A05-4C58-B1C2-F04B84EB9141}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AtividadeRedis2", "AtividadeRedis2\AtividadeRedis2.csproj", "{468778F5-DD5E-4344-9A6F-F8BAF20F82E1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{CEED9B50-8A05-4C58-B1C2-F04B84EB9141}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CEED9B50-8A05-4C58-B1C2-F04B84EB9141}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CEED9B50-8A05-4C58-B1C2-F04B84EB9141}.Release|Any CPU.Build.0 = Release|Any CPU
+		{468778F5-DD5E-4344-9A6F-F8BAF20F82E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{468778F5-DD5E-4344-9A6F-F8BAF20F82E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{468778F5-DD5E-4344-9A6F-F8BAF20F82E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{468778F5-DD5E-4344-9A6F-F8BAF20F82E1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
